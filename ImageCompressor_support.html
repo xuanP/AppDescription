@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image Compressor Technical Support - 图片压缩技术支持">
+    <title>Support - Image Compressor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+            margin-top: 8px;
+        }
+
+        .language-toggle {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .language-toggle button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .language-toggle button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .language-toggle button.active {
+            background: white;
+            color: #667eea;
+            border-color: white;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #555;
+        }
+
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0e7ff 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe7ff 100%);
+            border-left: 4px solid #764ba2;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box strong {
+            color: #764ba2;
+            font-size: 18px;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 16px 0;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .faq-item h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💬 Technical Support</h1>
+            <p>技术支持</p>
+            <div class="language-toggle">
+                <button onclick="switchLanguage('en')" id="btn-en" class="active">English</button>
+                <button onclick="switchLanguage('zh')" id="btn-zh">中文</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- English Version -->
+            <div id="lang-en" class="lang-section active">
+                <h2>Image Compressor - Technical Support</h2>
+
+                <div class="highlight-box">
+                    <p><strong>Welcome!</strong> We're here to help you get the most out of Image Compressor.</p>
+                </div>
+
+                <h3>📱 About Image Compressor</h3>
+                <p>
+                    Image Compressor is a simple, efficient photo compression tool that helps you:
+                </p>
+                <ul>
+                    <li>Compress up to 16 photos at once</li>
+                    <li>Real-time Before/After comparison</li>
+                    <li>Adjust compression quality from 1% to 100%</li>
+                    <li>100% offline processing - your photos never leave your device</li>
+                    <li>No ads, no in-app purchases, completely free</li>
+                </ul>
+
+                <h3>🆘 Frequently Asked Questions</h3>
+
+                <div class="faq-item">
+                    <h3>Q: How do I compress photos?</h3>
+                    <p><strong>A:</strong> It's simple!</p>
+                    <ol>
+                        <li>Tap "Select Image(s)" button</li>
+                        <li>Choose 1-16 photos from your library</li>
+                        <li>Drag the slider to adjust compression quality (default: 50%)</li>
+                        <li>Swipe the card to compare Before/After</li>
+                        <li>Tap "Save to Album" to save compressed photos</li>
+                    </ol>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: Are my photos uploaded to a server?</h3>
+                    <p><strong>A:</strong> No! All processing happens 100% on your device. Your photos never leave your phone. The app works completely offline and collects zero data.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: What's the difference between single and batch mode?</h3>
+                    <p><strong>A:</strong></p>
+                    <ul>
+                        <li><strong>Single Mode:</strong> Select 1 photo for quick compression with instant preview</li>
+                        <li><strong>Batch Mode:</strong> Select 2-16 photos to compress them all at once, then choose which ones to save</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: Why is the app asking for photo library access?</h3>
+                    <p><strong>A:</strong> We need access to:</p>
+                    <ul>
+                        <li>Let you select photos for compression</li>
+                        <li>Save compressed photos back to your library</li>
+                    </ul>
+                    <p>We never access your photos without your permission, and we never upload them anywhere.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: Which compression quality should I choose?</h3>
+                    <p><strong>A:</strong> It depends on your needs:</p>
+                    <ul>
+                        <li><strong>90% (High Quality):</strong> Nearly lossless, 40-60% smaller</li>
+                        <li><strong>50% (Default):</strong> Great balance, 70-80% smaller</li>
+                        <li><strong>15% (Maximum):</strong> Heavy compression, 90-95% smaller</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: The app isn't working properly</h3>
+                    <p><strong>A:</strong> Try these steps:</p>
+                    <ol>
+                        <li>Make sure you're running iOS 15.0 or later</li>
+                        <li>Try closing and reopening the app</li>
+                        <li>Restart your iPhone</li>
+                        <li>If the problem persists, contact us (see below)</li>
+                    </ol>
+                </div>
+
+                <h3>📧 Contact Us</h3>
+                <div class="contact-box">
+                    <p><strong>Need more help?</strong></p>
+                    <p>
+                        We're here to help! Please contact us:
+                    </p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:pengxuan0101@gmail.com">pengxuan0101@gmail.com</a></li>
+                    </ul>
+                    <p>We typically respond within 24-48 hours.</p>
+                </div>
+
+                <h3>🔗 Useful Links</h3>
+                <ul>
+                    <li><a href="ImageCompressor_privacy_policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Chinese Version -->
+            <div id="lang-zh" class="lang-section">
+                <h2>图片压缩 - 技术支持</h2>
+
+                <div class="highlight-box">
+                    <p><strong>欢迎！</strong>我们随时为您提供帮助，让您更好地使用图片压缩。</p>
+                </div>
+
+                <h3>📱 关于图片压缩</h3>
+                <p>
+                    图片压缩是一款简单高效的照片压缩工具，帮助您：
+                </p>
+                <ul>
+                    <li>一次压缩最多16张照片</li>
+                    <li>实时 Before/After 对比</li>
+                    <li>1%-100% 自由调节压缩质量</li>
+                    <li>100% 离线处理 - 照片永不离开您的设备</li>
+                    <li>无广告，无内购，完全免费</li>
+                </ul>
+
+                <h3>🆘 常见问题</h3>
+
+                <div class="faq-item">
+                    <h3>Q: 如何压缩照片？</h3>
+                    <p><strong>A:</strong> 非常简单！</p>
+                    <ol>
+                        <li>点击"选择图片"按钮</li>
+                        <li>从相册中选择1-16张照片</li>
+                        <li>拖动滑块调整压缩质量（默认：50%）</li>
+                        <li>滑动卡片查看 Before/After 对比</li>
+                        <li>点击"保存到相册"保存压缩后的照片</li>
+                    </ol>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 我的照片会被上传到服务器吗？</h3>
+                    <p><strong>A:</strong> 不会！所有处理100%在您的设备上完成。照片永远不会离开您的手机。应用完全离线工作，零数据收集。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 单图模式和批量模式有什么区别？</h3>
+                    <p><strong>A:</strong></p>
+                    <ul>
+                        <li><strong>单图模式：</strong>选择1张照片进行快速压缩，即时预览</li>
+                        <li><strong>批量模式：</strong>选择2-16张照片一次性压缩，然后选择要保存的照片</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 为什么应用需要访问相册权限？</h3>
+                    <p><strong>A:</strong> 我们需要权限来：</p>
+                    <ul>
+                        <li>让您选择要压缩的照片</li>
+                        <li>将压缩后的照片保存回相册</li>
+                    </ul>
+                    <p>我们从不在未经您允许的情况下访问照片，也不会上传到任何地方。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 应该选择什么压缩质量？</h3>
+                    <p><strong>A:</strong> 根据您的需求：</p>
+                    <ul>
+                        <li><strong>90%（高质量）：</strong>几乎无损，减少40-60%</li>
+                        <li><strong>50%（默认）：</strong>完美平衡，减少70-80%</li>
+                        <li><strong>15%（极限）：</strong>大幅压缩，减少90-95%</li>
+                    </ul>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Q: 应用无法正常工作</h3>
+                    <p><strong>A:</strong> 请尝试以下步骤：</p>
+                    <ol>
+                        <li>确保您运行的是 iOS 15.0 或更高版本</li>
+                        <li>尝试关闭并重新打开应用</li>
+                        <li>重启 iPhone</li>
+                        <li>如果问题仍然存在，请联系我们（见下方）</li>
+                    </ol>
+                </div>
+
+                <h3>📧 联系我们</h3>
+                <div class="contact-box">
+                    <p><strong>需要更多帮助？</strong></p>
+                    <p>
+                        我们随时为您服务！请通过以下方式联系：
+                    </p>
+                    <ul>
+                        <li><strong>邮箱：</strong> <a href="mailto:pengxuan0101@gmail.com">pengxuan0101@gmail.com</a></li>
+                    </ul>
+                    <p>我们通常在24-48小时内回复。</p>
+                </div>
+
+                <h3>🔗 相关链接</h3>
+                <ul>
+                    <li><a href="ImageCompressor_privacy_policy.html">隐私政策</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Image Compressor. All rights reserved.</p>
+            <p style="margin-top: 16px;">
+                <a href="ImageCompressor_privacy_policy.html">Privacy Policy</a> ·
+                <a href="ImageCompressor_support.html">Support</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all language sections
+            document.querySelectorAll('.lang-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected language section
+            document.getElementById('lang-' + lang).classList.add('active');
+
+            // Update button states
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            // Update page language attribute
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+    </script>
+</body>
+</html>

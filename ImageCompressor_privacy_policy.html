@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image Compressor Privacy Policy - We do not collect any personal data">
+    <title>Privacy Policy - Image Compressor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+            margin-top: 8px;
+        }
+
+        .language-toggle {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .language-toggle button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .language-toggle button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .language-toggle button.active {
+            background: white;
+            color: #667eea;
+            border-color: white;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #555;
+        }
+
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f7ff 0%, #f0e7ff 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box strong {
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>隐私政策</p>
+            <div class="language-toggle">
+                <button onclick="switchLanguage('en')" id="btn-en" class="active">English</button>
+                <button onclick="switchLanguage('zh')" id="btn-zh">中文</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">Last Updated: January 12, 2026</div>
+
+            <!-- English Version -->
+            <div id="lang-en" class="lang-section active">
+                <h2>Privacy Policy for Image Compressor</h2>
+
+                <div class="highlight-box">
+                    <strong>✅ We DO NOT collect any personal data.</strong>
+                </div>
+
+                <h3>📱 Overview</h3>
+                <p>
+                    Image Compressor ("the App") is committed to protecting your privacy.
+                    This policy explains our data practices in a clear and transparent manner.
+                </p>
+
+                <h3>🚫 Data Collection</h3>
+                <p><strong>We DO NOT collect ANY personal data or information.</strong></p>
+                <p>The App:</p>
+                <ul>
+                    <li>❌ Does NOT collect any user information</li>
+                    <li>❌ Does NOT track user behavior or analytics</li>
+                    <li>❌ Does NOT use analytics or tracking tools</li>
+                    <li>❌ Does NOT send any data to external servers</li>
+                    <li>❌ Does NOT store any data on our servers</li>
+                    <li>❌ Does NOT use any third-party SDKs or services</li>
+                </ul>
+
+                <h3>📸 Photo Library Access</h3>
+                <p>The App requests access to your photo library solely to:</p>
+                <ul>
+                    <li>✅ Allow you to select photos for compression</li>
+                    <li>✅ Save compressed photos back to your library</li>
+                </ul>
+                <p>
+                    <strong>All photo processing happens entirely on your device.</strong>
+                    Photos are never uploaded to any server or transmitted over the network.
+                </p>
+
+                <h3>💾 Data Storage</h3>
+                <p>
+                    All image processing occurs locally on your device. No data is stored by
+                    the App beyond the compressed images you choose to save to your photo library.
+                </p>
+                <p>
+                    The App works completely offline and does not require an internet connection.
+                </p>
+
+                <h3>🔐 Security</h3>
+                <p>
+                    Since no data is collected or transmitted, your photos and information
+                    remain completely secure on your device. We use iOS native APIs for all
+                    image processing operations.
+                </p>
+
+                <h3>🌐 Third-Party Services</h3>
+                <p>
+                    The App does NOT use any third-party services, SDKs, analytics tools,
+                    or advertising networks. Your privacy is our priority.
+                </p>
+
+                <h3>👶 Children's Privacy</h3>
+                <p>
+                    The App does not knowingly collect information from children or anyone else,
+                    as we do not collect any information at all. The App is rated 4+ and is
+                    safe for all ages.
+                </p>
+
+                <h3>🔄 Changes to This Policy</h3>
+                <p>
+                    We may update this privacy policy from time to time. Any changes will be
+                    posted on this page with an updated revision date.
+                </p>
+
+                <h3>📧 Contact Us</h3>
+                <p>
+                    If you have any questions or concerns about this privacy policy,
+                    please contact us at:
+                </p>
+                <p><strong>Email:</strong> pengxuan0101@gmail.com</p>
+
+                <div class="highlight-box">
+                    <p>
+                        <strong>Summary:</strong> Image Compressor is designed with privacy at its core.
+                        We don't collect, transmit, or store any of your data. Your photos stay on
+                        your device, always.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chinese Version -->
+            <div id="lang-zh" class="lang-section">
+                <h2>图片压缩 - 隐私政策</h2>
+
+                <div class="highlight-box">
+                    <strong>✅ 我们不收集任何个人数据。</strong>
+                </div>
+
+                <h3>📱 概述</h3>
+                <p>
+                    图片压缩（"本应用"）致力于保护您的隐私。本政策以清晰透明的方式说明我们的数据处理方式。
+                </p>
+
+                <h3>🚫 数据收集</h3>
+                <p><strong>我们不收集任何个人数据或信息。</strong></p>
+                <p>本应用：</p>
+                <ul>
+                    <li>❌ 不收集任何用户信息</li>
+                    <li>❌ 不跟踪用户行为或分析数据</li>
+                    <li>❌ 不使用分析或跟踪工具</li>
+                    <li>❌ 不向外部服务器发送任何数据</li>
+                    <li>❌ 不在我们的服务器上存储任何数据</li>
+                    <li>❌ 不使用任何第三方 SDK 或服务</li>
+                </ul>
+
+                <h3>📸 相册访问权限</h3>
+                <p>本应用请求访问您的照片库仅用于：</p>
+                <ul>
+                    <li>✅ 允许您选择要压缩的照片</li>
+                    <li>✅ 将压缩后的照片保存回您的照片库</li>
+                </ul>
+                <p>
+                    <strong>所有照片处理完全在您的设备上进行。</strong>
+                    照片从不上传到任何服务器，也不通过网络传输。
+                </p>
+
+                <h3>💾 数据存储</h3>
+                <p>
+                    所有图像处理都在您的设备本地进行。除了您选择保存到照片库的压缩图像外，
+                    本应用不存储任何数据。
+                </p>
+                <p>
+                    本应用完全离线工作，不需要互联网连接。
+                </p>
+
+                <h3>🔐 安全性</h3>
+                <p>
+                    由于不收集或传输任何数据，您的照片和信息完全安全地保存在您的设备上。
+                    我们使用 iOS 原生 API 进行所有图像处理操作。
+                </p>
+
+                <h3>🌐 第三方服务</h3>
+                <p>
+                    本应用不使用任何第三方服务、SDK、分析工具或广告网络。
+                    您的隐私是我们的首要任务。
+                </p>
+
+                <h3>👶 儿童隐私</h3>
+                <p>
+                    本应用不会故意收集儿童或任何人的信息，因为我们根本不收集任何信息。
+                    本应用评级为 4+，适合所有年龄段使用。
+                </p>
+
+                <h3>🔄 政策变更</h3>
+                <p>
+                    我们可能会不时更新此隐私政策。任何更改都将发布在此页面上，
+                    并更新修订日期。
+                </p>
+
+                <h3>📧 联系我们</h3>
+                <p>
+                    如果您对此隐私政策有任何问题或疑虑，请通过以下方式联系我们：
+                </p>
+                <p><strong>邮箱：</strong>pengxuan0101@gmail.com</p>
+
+                <div class="highlight-box">
+                    <p>
+                        <strong>总结：</strong>图片压缩从核心设计上就注重隐私保护。
+                        我们不收集、不传输、不存储您的任何数据。您的照片始终保存在您的设备上。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Image Compressor. All rights reserved.</p>
+            <p>Made with ❤️ for privacy-conscious users</p>
+            <p style="margin-top: 16px;">
+                <a href="ImageCompressor_privacy_policy.html">Privacy Policy</a> ·
+                <a href="ImageCompressor_support.html">Support</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all language sections
+            document.querySelectorAll('.lang-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show selected language section
+            document.getElementById('lang-' + lang).classList.add('active');
+
+            // Update button states
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById('btn-' + lang).classList.add('active');
+
+            // Update page language attribute
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+            // Update last updated text
+            const lastUpdated = document.querySelector('.last-updated');
+            if (lang === 'zh') {
+                lastUpdated.textContent = '最后更新：2026年1月12日';
+            } else {
+                lastUpdated.textContent = 'Last Updated: January 12, 2026';
+            }
+        }
+    </script>
+</body>
+</html>
